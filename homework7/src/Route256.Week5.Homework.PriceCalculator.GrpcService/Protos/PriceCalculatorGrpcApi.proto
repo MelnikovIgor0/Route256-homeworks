@@ -1,0 +1,50 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "Route256.Week5.Homework.PriceCalculator.GrpcService";
+
+service PriceCalculatorGrpcApi {
+  rpc CalculatePrice(CalculatePriceRequest) returns (CalculatePriceResponse);
+  rpc ClearHistory(ClearHistoryRequest) returns (google.protobuf.Empty);
+  rpc History(HistoryRequest) returns (stream HistoryResponse);
+}
+
+message CalculatePriceRequest {
+  int64 UserId = 1;
+  repeated GoodModel goods = 2;
+}
+
+message GoodModel {
+  double Height = 1;
+  double Length = 2;
+  double Width = 3;
+  double Weight = 4;
+}
+
+message CalculatePriceResponse {
+  int64 CalculationId = 1;
+  double Price = 2;
+}
+
+message ClearHistoryRequest {
+  int64 UserId = 1;
+  repeated int64 CalculationIds = 2;
+}
+
+message HistoryRequest {
+  int64 UserId = 1;
+  int64 Take = 2;
+  int64 Skip = 3;
+}
+
+message HistoryResponse {
+  CargoResponse cargo = 1;
+  double price = 2;
+}
+
+message CargoResponse {
+  double Volume = 1;
+  double Weight = 2;
+  repeated int64 GoodIds = 3;
+}

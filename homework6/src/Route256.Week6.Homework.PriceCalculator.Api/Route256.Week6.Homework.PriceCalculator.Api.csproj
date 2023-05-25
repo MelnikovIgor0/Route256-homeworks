@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.18.0" />
+    <PackageReference Include="Confluent.Kafka" Version="2.1.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Route256.Week6.Homework.PriceCalculator.BackgroundServices\Route256.Week6.Homework.PriceCalculator.BackgroundServices.csproj" />
+    <ProjectReference Include="..\Route256.Week6.Homework.PriceCalculator.Bll\Route256.Week6.Homework.PriceCalculator.Bll.csproj" />
+    <ProjectReference Include="..\Route256.Week6.Homework.PriceCalculator.Dal\Route256.Week6.Homework.PriceCalculator.Dal.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions" />
+    <Folder Include="NamingPolicies" />
+    <Folder Include="Requests\V1" />
+    <Folder Include="Responses\V1" />
+    <Folder Include="Validators\V1" />
+  </ItemGroup>
+
+</Project>

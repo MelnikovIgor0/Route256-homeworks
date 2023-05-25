@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{66F59723-311B-4F39-80B5-DA3070F4309F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route256.Week5.Homework.PriceCalculator.Dal", "src\Route256.Week5.Homework.PriceCalculator.Dal\Route256.Week5.Homework.PriceCalculator.Dal.csproj", "{0AFAE29D-045E-468B-AFFF-4D3630906776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route256.Week5.Homework.PriceCalculator.Bll", "src\Route256.Week5.Homework.PriceCalculator.Bll\Route256.Week5.Homework.PriceCalculator.Bll.csproj", "{EFA050F1-DE1F-41C8-9A48-9571B74F921B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route256.Week5.Homework.PriceCalculator.IntegrationTests", "test\Route256.Week5.Homework.PriceCalculator.IntegrationTests\Route256.Week5.Homework.PriceCalculator.IntegrationTests.csproj", "{F3200459-4466-4458-A76A-E4C0C73EAF47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{54786A8F-E674-4A31-8303-F193499DBCEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route256.Week5.Homework.PriceCalculator.UnitTests", "test\Route256.Week5.Homework.PriceCalculator.UnitTests\Route256.Week5.Homework.PriceCalculator.UnitTests.csproj", "{AA3760DB-E035-475C-B8EB-E1069708F41A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route256.Week5.Homework.TestingInfrastructure", "test\Route256.Week5.Homework.TestingInfrastructure\Route256.Week5.Homework.TestingInfrastructure.csproj", "{E69F81B6-4B1A-4341-82CD-96091945D7A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route256.Week5.Homework.PriceCalculator.GrpcService", "src\Route256.Week5.Homework.PriceCalculator.GrpcService\Route256.Week5.Homework.PriceCalculator.GrpcService.csproj", "{917D10C8-19CA-4069-A540-6284033FE8A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Route256.Week5.Homework.PriceCalculator.Client", "src\Route256.Week5.Homework.PriceCalculator.Client\Route256.Week5.Homework.PriceCalculator.Client.csproj", "{0098EBBB-E169-4623-B8E5-DD6FC5CB02F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AFAE29D-045E-468B-AFFF-4D3630906776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AFAE29D-045E-468B-AFFF-4D3630906776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AFAE29D-045E-468B-AFFF-4D3630906776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AFAE29D-045E-468B-AFFF-4D3630906776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA050F1-DE1F-41C8-9A48-9571B74F921B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA050F1-DE1F-41C8-9A48-9571B74F921B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA050F1-DE1F-41C8-9A48-9571B74F921B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA050F1-DE1F-41C8-9A48-9571B74F921B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3200459-4466-4458-A76A-E4C0C73EAF47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3200459-4466-4458-A76A-E4C0C73EAF47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3200459-4466-4458-A76A-E4C0C73EAF47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3200459-4466-4458-A76A-E4C0C73EAF47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA3760DB-E035-475C-B8EB-E1069708F41A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3760DB-E035-475C-B8EB-E1069708F41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3760DB-E035-475C-B8EB-E1069708F41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3760DB-E035-475C-B8EB-E1069708F41A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69F81B6-4B1A-4341-82CD-96091945D7A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69F81B6-4B1A-4341-82CD-96091945D7A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69F81B6-4B1A-4341-82CD-96091945D7A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69F81B6-4B1A-4341-82CD-96091945D7A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917D10C8-19CA-4069-A540-6284033FE8A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917D10C8-19CA-4069-A540-6284033FE8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917D10C8-19CA-4069-A540-6284033FE8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917D10C8-19CA-4069-A540-6284033FE8A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0098EBBB-E169-4623-B8E5-DD6FC5CB02F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0098EBBB-E169-4623-B8E5-DD6FC5CB02F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0098EBBB-E169-4623-B8E5-DD6FC5CB02F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0098EBBB-E169-4623-B8E5-DD6FC5CB02F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0AFAE29D-045E-468B-AFFF-4D3630906776} = {66F59723-311B-4F39-80B5-DA3070F4309F}
+		{EFA050F1-DE1F-41C8-9A48-9571B74F921B} = {66F59723-311B-4F39-80B5-DA3070F4309F}
+		{F3200459-4466-4458-A76A-E4C0C73EAF47} = {54786A8F-E674-4A31-8303-F193499DBCEA}
+		{AA3760DB-E035-475C-B8EB-E1069708F41A} = {54786A8F-E674-4A31-8303-F193499DBCEA}
+		{E69F81B6-4B1A-4341-82CD-96091945D7A0} = {54786A8F-E674-4A31-8303-F193499DBCEA}
+		{917D10C8-19CA-4069-A540-6284033FE8A5} = {66F59723-311B-4F39-80B5-DA3070F4309F}
+		{0098EBBB-E169-4623-B8E5-DD6FC5CB02F4} = {66F59723-311B-4F39-80B5-DA3070F4309F}
+	EndGlobalSection
+EndGlobal

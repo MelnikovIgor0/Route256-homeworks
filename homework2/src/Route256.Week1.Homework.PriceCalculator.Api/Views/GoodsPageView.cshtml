@@ -1,0 +1,14 @@
+@model Route256.Week1.Homework.PriceCalculator.Api.ViewModels.GoodsPageViewModel
+<h2> Header </h2>
+
+<ul>
+    @foreach (var x in Model.Goods)
+    {
+        <li>
+            <p>Наименование: @x.Name</p>
+            <p>Цена: @x.Price</p>
+            <p>Количество: @x.Count</p>
+            <p> <a href="/goods/calculate/@x.Id">Стоимость</a> </p>
+        </li>
+    }
+</ul>

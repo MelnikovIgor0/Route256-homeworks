@@ -1,0 +1,12 @@
+version: "3"
+services:
+    price-calculator-local:
+        image: postgres
+        restart: always
+        container_name: price-calculator-local
+        environment:
+            POSTGRES_USER: "postgres"
+            POSTGRES_DB: "price-calculator"
+            POSTGRES_PASSWORD: "123456"
+        ports:
+            - 15432:5432

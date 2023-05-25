@@ -1,0 +1,10 @@
+﻿{
+  "ConfigData":
+  {
+    "InputFile": "input.csv",
+    "OutputFile": "output.csv",
+    "Parallelism": 1,
+    "VolumeToPriceRatio": 1.0,
+    "WeightToPriceRatio": 1.0
+  }
+}
